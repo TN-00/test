@@ -144,7 +144,15 @@ const Healthcare = () => {
             }
         };
         connectWallet();
-    }, [])
+    }, []);
+
+    return(
+        <div className='container'>
+            <h1>Connecting React app and meta mask</h1>
+            <p className='account-info'>Connect account: {account}</p>
+            <p className='owner-info'>Contract owner: {owner}</p> 
+        </div>
+    )
 
 }
 
